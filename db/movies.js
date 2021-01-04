@@ -1,6 +1,6 @@
 const db = require("./dbconfig");
 
-// Get all movies
+// Get all customers
 const getAllCustomers = (req, res) => {
   db.query("SELECT * FROM customers", (err, result) => {
     if (err) console.error(err);
